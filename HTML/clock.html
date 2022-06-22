@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Henil</title>
+</head>
+<style>
+    body{
+        background-color: rgb(7, 7, 7);
+        color: aliceblue;
+    }
+    .main{
+        width: 400px;
+        height: 250px;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0 0 12px 0 rgb(247, 245, 245);
+        margin: auto;
+        text-align: center;
+        margin-top: 200px;
+        animation: .5s;
+    }
+    #clock{
+        font-size: 50px;
+    }
+    #date{
+        font-size: 30px;
+        margin-top: 20px ;
+    }
+</style>
+<script>
+    function clock(){
+        const date = new Date();
+        let hr = date.getHours();
+        let mt = date.getMinutes();
+        let sc = date.getSeconds();
+        let dt = date.getDate();
+        let mu = date.getMonth();
+        let yr = date.getFullYear();
+
+        document.getElementById("clock").innerHTML= hr + " : "+ mt + " : " + sc;
+        if(mu == 0){
+            mu =1;
+            document.getElementById("date").innerHTML= dt + " / 0"+ mu +" / " + yr;
+        }else if ( mu ==11){
+            mu =12;
+            document.getElementById("date").innerHTML= dt + " / 0"+ mu +" / " + yr;
+        }
+        else{
+            mu++;
+            document.getElementById("date").innerHTML= dt + " / 0"+ mu +" / " + yr ;
+        }
+        setTimeout(clock,1000);
+    }
+</script>
+<body onload="clock()">
+    <div class="main">
+        <h1>Clock</h1>
+        <div id="clock"></div>
+        <div id="date"></div>
+        <div id="ut"></div>
+    </div>
+</body>
+</html>

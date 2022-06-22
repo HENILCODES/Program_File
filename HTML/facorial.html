@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<title> Henil </title>
+<style>
+*{
+margin: 10px;
+padding:5px;
+.fun{
+color: blue;
+background-color: pink;
+font-size:20px;
+}
+.fun:active{
+background-color: red;
+box-shadow: 0 5px blue;
+}
+</style>
+
+<script>
+function h1(){
+var a,f=1,i=1;
+a=document.getElementById("num").value;
+
+while(i<=a){
+f=f*i;
+i++;}
+document.getElementById("ans").value=(f);
+}
+</script>
+</head>
+
+<body>
+
+<h1> Factorial of number for click button</h1>
+Number : <input type="number" placeholder="Enter number" id="num"> <br>
+Answer : <input type="text" id="ans" size="10" readonly>  <br>
+<button onclick="h1()" class="fun"> Factorial </button> 
+</body>
+</html>

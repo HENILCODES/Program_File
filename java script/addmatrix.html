@@ -1,0 +1,48 @@
+<html>
+<title>
+add 2d Matrix
+</title>
+<script language="javascript">
+ 
+// Javascript program for addition
+// of two matrices
+ 
+var N = 3;
+ 
+// This function adds A[][] and B[][], and stores
+// the result in C[][]
+function add(A, B, C)
+{
+    var i, j;
+    for (i = 0; i < N; i++)
+        for (j = 0; j < N; j++)
+            C[i][j] = A[i][j] + B[i][j];
+}
+ 
+// assume value of matrix
+    var A = [ 	    [1, 1, 1],
+                    [2, 2, 2],
+                    [3, 3, 3]];
+ 
+    var B = [ 	    [4, 5, 6],
+                    [2, 3, 4],
+                    [1, 2, 3]];
+ 
+    // To store result in third matrix
+    var C = new Array(N);
+    for (var k = 0; k < N; k++)
+        C[k] = new Array(N);
+         
+    
+    add(A, B, C); // function call
+ 
+    document.write("Result matrix is <br>");
+    for (i = 0; i < N; i++)
+    {
+        for (j = 0; j < N; j++)
+            document.write(C[i][j] + " ");
+        document.write("<br>");
+    }
+ 
+</script>
+</html>

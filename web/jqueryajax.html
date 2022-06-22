@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(loadObject);
+        });
+        function loadObject() {
+            var xhttp = new XMLHttpRequest();
+            if (xhttp)
+                alert('object created!!!');
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    const res = JSON.parse(xhttp.responseText);
+                    alert(res);
+                    var student = "<h1> Describing Employee </h1>";
+                    for (const key in res) {
+                        student += key + res[key] + "<br>";
+                        alert(key);
+                    }
+                    $("#demo").html(student);
+                }
+            };
+            xhttp.open("GET", "emp.json", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="demo">
+        <h1>Read JSON Object</h1>
+        <button type="button" id="btn" >Describe an Emplopyee</button>
+    </div>
+</body>
+
+</html>

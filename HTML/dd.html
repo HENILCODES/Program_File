@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Age</title>
+<style>
+    select, input{
+        padding: 4px;
+        font-size: 20px;
+        text-align: center;
+    }
+    span{
+        font-size: 28px;
+        display:inline-block;
+        margin-right: 15px;
+    }
+    .Main{
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%,-50%);
+    }
+    button{
+        padding: 8px;
+        font-size: 20px;    
+    }
+</style>
+</head>
+
+<body>
+    <div class="Main">
+        <div class="DOB">
+            <span>Date Of Birth </span>
+            <select id="Date">
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+                <option value="6"> 6</option>
+                <option value="7"> 7</option>
+                <option value="8"> 8</option>
+                <option value="9"> 9</option>
+                <option value="10"> 10</option>
+                <option value="11"> 11</option>
+                <option value="12"> 12</option>
+                <option value="13"> 13</option>
+                <option value="14"> 14</option>
+                <option value="15"> 15</option>
+                <option value="16"> 16</option>
+                <option value="17"> 17</option>
+                <option value="18"> 18</option>
+                <option value="19"> 19</option>
+                <option value="20"> 20</option>
+                <option value="21"> 21</option>
+                <option value="22"> 22</option>
+                <option value="23"> 23</option>
+                <option value="24"> 24</option>
+                <option value="25"> 25</option>
+                <option value="26"> 26</option>
+                <option value="27"> 27</option>
+                <option value="28"> 28</option>
+                <option value="29"> 29</option>
+                <option value="30"> 30</option>
+                <option value="31"> 31</option>
+            </select>
+            <select id="Mounth">
+                <option value=" 1"> Jan </option>
+                <option value=" 2"> Feb </option>
+                <option value=" 3"> March </option>
+                <option value=" 4"> Apr </option>
+                <option value=" 5"> may </option>
+                <option value=" 6"> june </option>
+                <option value=" 7"> july </option>
+                <option value=" 8"> aug</option>
+                <option value=" 9"> sept</option>
+                <option value=" 10"> oct </option>
+                <option value="11"> nav </option>
+                <option value="12"> Dec </option>
+            </select>
+            <input id="Year" type="text" size="3" maxlength="4">
+        </div>
+<br>
+        <div class="TODAY">
+            <span>Today Date</span>
+            <select id="Today_Date">
+                <option value="1"> 1</option>
+                <option value="2"> 2</option>
+                <option value="3"> 3</option>
+                <option value="4"> 4</option>
+                <option value="5"> 5</option>
+                <option value="6"> 6</option>
+                <option value="7"> 7</option>
+                <option value="8"> 8</option>
+                <option value="9"> 9</option>
+                <option value="10"> 10</option>
+                <option value="11"> 11</option>
+                <option value="12"> 12</option>
+                <option value="13"> 13</option>
+                <option value="14"> 14</option>
+                <option value="15"> 15</option>
+                <option value="16"> 16</option>
+                <option value="17"> 17</option>
+                <option value="18"> 18</option>
+                <option value="19"> 19</option>
+                <option value="20"> 20</option>
+                <option value="21"> 21</option>
+                <option value="22"> 22</option>
+                <option value="23"> 23</option>
+                <option value="24"> 24</option>
+                <option value="25"> 25</option>
+                <option value="26"> 26</option>
+                <option value="27"> 27</option>
+                <option value="28"> 28</option>
+                <option value="29"> 29</option>
+                <option value="30"> 30</option>
+                <option value="31"> 31</option>
+            </select>
+            <select id="Today_Month">
+                <option value=" 1"> Jan </option>
+                <option value=" 2"> Feb </option>
+                <option value=" 3"> March </option>
+                <option value=" 4"> Apr </option>
+                <option value=" 5"> may </option>
+                <option value=" 6"> june </option>
+                <option value=" 7"> july </option>
+                <option value=" 8"> aug</option>
+                <option value=" 9"> sept</option>
+                <option value=" 10"> oct </option>
+                <option value="11"> nav </option>
+                <option value="12"> Dec </option>
+            </select>
+            <input id="Today_Year" type="text" size="3" maxlength="4">
+        </div>
+<br>
+        <button onclick="date()">Calculate</button>
+        <div class="detail">
+            <h1> <span id="Total_Year"></span> Year. <span id="Total_Month"></span> Month </h1>
+        </div>
+    </div>
+</body>
+<script>
+    function date() {
+        var DOB_Date = document.getElementById('Date').value;
+        var DOB_Month = document.getElementById('Month').value;
+        var DOB_Year = document.getElementById('Year').value;
+        
+        const date = new Date();
+        var today_date = date.getDate();
+        var today_month = date.getMonth();
+
+        var TODAY_Date = document.getElementById('Today_Date').value;
+        var TODAY_Month = document.getElementById('Today_Month').value;
+        var TODAY_Year = document.getElementById('Today_Year').value;
+
+        document.getElementById('Total_Year').innerHTML = TODAY_Year - DOB_Year;
+        document.getElementById('Total_Month').innerHTML = 12 - DOB_Month;
+    }
+</script>
+
+</html>

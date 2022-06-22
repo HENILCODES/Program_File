@@ -1,0 +1,74 @@
+<script src="jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#addLang").click(function () {
+            $("#lang").show();
+        });
+        $("#newLang").blur(function () {
+            var newLang = $("#newLang").val();
+            alert('Hello' + newLang);
+            $("#langList").append("<option>" + newLang + "</option>");
+            $("#lang").hide();
+        });
+    });
+</script>
+<style>
+    fieldset {
+        display: block;
+        margin-left: 20px;
+        margin-right: 10px;
+        border: 10px groove;
+        width: 800px;
+        color: #00CC00;
+    }
+</style>
+<form method="post" enctype="multipart/form-data">
+    <fieldset>
+        <table align="center" width="70%">
+            <legend>Personal Information:</legend>
+            <tr>
+                <td width="314">Full Name</td>
+                <td width="276"><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Contact No</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="Male"> Male
+                    <input type="radio" value="Female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea rows="5" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>
+                    <select id="langList">
+                        <option>Gujarati</option>
+                        <option>Hindi</option>
+                        <option>English</option>
+                    </select>
+                    <a id="addLang" href="#"> Add Language </a>
+                </td>
+            </tr>
+            <tr style="display: none;" id="lang">
+                <td>Add new Language</td>
+                <td><input type="text" id="newLang"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Save">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>

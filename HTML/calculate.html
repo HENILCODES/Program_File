@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title> Henil </title>
+</head>
+<body>
+<h1> calculates any Two number </h1>
+
+<from>
+First number : <input type="number" id="first"> <br>
+second number :<input type="number" id="second"> <br>
+<hr>
+
+<button onclick="multy()" > multiple (*) </button>
+<button onclick="minas()" > subtract (-) </button>
+<button onclick="divis()" > division (/) </button>
+<button onclick="sum()"> sum (+) </button>
+</from>
+<hr>
+<h3> answer is : </h3>
+<h4 id="result"> </h4>
+
+<script>
+function multy(){
+a= document.getElementById("first").value;
+b= document.getElementById("second").value;
+document.getElementById("result").innerHTML= a * b;
+}
+</script>
+
+<script>
+function minas(){
+a= document.getElementById("first").value;
+b= document.getElementById("second").value;
+document.getElementById("result").innerHTML= a - b;
+}
+</script>
+
+<script>
+function divis(){
+a= document.getElementById("first").value;
+b= document.getElementById("second").value;
+document.getElementById("result").innerHTML= a / b;
+}
+</script>
+<script>
+function sum(){
+var a= parseInt(document.getElementById("first").value);
+var b= parseInt(document.getElementById("second").value);
+var c = a +b;
+document.getElementById("result").innerHTML= c;
+}
+</script>
+</body>
+</html>

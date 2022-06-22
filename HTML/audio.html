@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+	<title> h </title>
+</head>
+
+<body>
+	<h1> Bela chao </h1>
+	<audio controls autoplay>
+		<source src="ticktock.wav" />
+	</audio>
+	<br>
+	<hr>
+	<input type="button" onclick="play()" value="▶" style="font-size:50px;color:red;background:yellow">
+	<input type="button" onclick="pasu()" value="⏸" style="font-size:50px;color:red;background:yellow">
+
+	<script>
+		function play() {
+			var v = document.getElementsByTagName("audio")[0];
+			v.play();
+		}
+		function pasu() {
+			var m = document.getElementsByTagName("audio")[0];
+			m.pause();
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<title> Henil </title>
+</head>
+<body>
+<h1> calculates any Two number </h1>
+
+<from name="f1">
+Enter first number :-<input type="text" id="n1">
+Enter second number :-<input type="text" id="n2">
+<h3> Choose following option </h3>
+<ul>
+<li> 1. for ( + ) opretor </li>
+<li> 2. for ( - ) opretor </li>
+<li> 3. for ( * ) opretor </li>
+<li> 4. for ( / ) opretor </li>
+</ul>
+<button onclick="chos()" > choose your option </button>
+<b> <P id="opret"></p> </b>
+</from>
+
+<script>
+function chos()
+{
+var ch=parseInt(prompt("enter choise"));
+var a=parseInt(document.getElementById("n1").value);
+var b=parseInt(document.getElementById("n2").value);
+switch (ch){
+
+    case 1:
+        document.getElementById("opret").innerHTML=("Select operator is : +");
+	document.getElementById("result").innerHTML=(a + b);
+        break;
+    case 2:
+        document.getElementById("opret").innerHTML=("Select operator is : ' - '");
+	document.getElementById("result").innerHTML=(a - b);
+        break;
+    case 3:
+        document.getElementById("opret").innerHTML=("Select operator is : * ");
+	document.getElementById("result").innerHTML=(a * b);
+        break;
+   case 4:
+        document.getElementById("opret").innerHTML=("Select operator is : / ");
+	document.getElementById("result").innerHTML=(a / b);
+        break;
+    default:
+        document.getElementById("result").innerHTML=("Try again and select opretor");
+        break;
+}
+}
+</script>
+<b> <h2> Result = <span id="result"> </span> </h2> </b>
+</body>
+</html>

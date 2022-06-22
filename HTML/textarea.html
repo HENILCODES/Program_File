@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Henil </title>
+	</head>
+<body>
+<style>
+#tex{
+	color:lightgreen;
+	background:rgb(27, 31, 40);
+	border:5px solid white;
+	font-size:20px;
+	resize: none;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+  border-radius: 20px 4px 4px 10px;
+}
+body{
+	background:black;
+}
+.btn-group button{
+	background-color:red;
+	border:1px solid green;
+	color:white;
+	font-size:20px;
+	padding:10px 25px;
+	float:left;
+}
+</style>
+	<form>
+<div class="btn-group">
+<button> HTML </button>
+<button> CSS </button><br>
+</div>
+	<textarea id="tex" rows="20"cols="50" readonly>
+<!doctype html>
+<html>
+	<head>
+		<title> h </title>
+	</head>
+<body>
+	<h1> Bela chao </h1>
+<audio  controls autoplay>
+<source src="D:\Bluetooth\bela.mp3"/> 
+</audio>
+<br><hr>
+<input type="button" onclick="play()" value="▶" style="font-size:50px;color:red;background:yellow">
+<input type="button" onclick="pasu()" value="⏸" style="font-size:50px;color:red;background:yellow">
+
+<script>
+function play(){
+var v = document.getElementsByTagName("audio")[0];
+v.play();
+}
+function pasu(){
+var m = document.getElementsByTagName("audio")[0];
+m.pause();
+}
+</script>
+</body>
+</html>
+
+		
+</textarea>
+	</form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+import datetime as t
+c=t.datetime.now()
+print("date & time= ", c)
+print("year =",c.year)
+print("month =",c.month)
+print("date =",c.day)
+print("time hour =",c.hour)
+print("time minutes=",c.minute)
+print("time second =",c.second)
+print("time microsecond =",c.microsecond)

@@ -1,0 +1,12 @@
+import csv
+with open('student.csv','w')as csvfile:
+    fieldnames=['Roll_no','Name','Age','Address']
+    writer=csv.DictWriter(csvfile,fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow({'Roll_no':6,'Name':'Henil','Age':19,'Address':'Vapi'})
+    writer.writerow({'Roll_no':6,'Name':'Sivam','Age':20,'Address':'Baroda'})
+    writer.writerow({'Roll_no':6,'Name':'Nayan','Age':22,'Address':'Surat'})
+    writer.writerow({'Roll_no':6,'Name':'Aryan','Age':18,'Address':'Gunjan'})
+    writer.writerow({'Roll_no':6,'Name':'Gyanu','Age':23,'Address':'Valsad'})
+            
+    

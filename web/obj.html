@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function loadObject() {
+var xhttp = new XMLHttpRequest();
+if(xhttp)
+alert('object created!!!');
+xhttp.onreadystatechange = function() {
+//alert('Ready State:'+xhttp.readyState); //alert('Status:'+xhttp.status);
+if (this.readyState == 4 && this.status == 200) {
+//alert(xhttp.responseText);
+const res=JSON.parse(xhttp.responseText);
+alert(res);
+var student="<h1> Describing Student </h1>";
+for (const key in res){
+student+=`${key} : ${res[key]}` + "<br>";
+}
+document.getElementById("demo").innerHTML = student;
+}
+};
+xhttp.open("GET", "stud.json", true);
+xhttp.send();
+}
+</script>
+</head><body>
+<div id="demo">
+<h1>Read JSON Object</h1>
+<button type="button" onclick="loadObject()">Load JSON Student Object</button>
+</div>
+</body>
+</html>

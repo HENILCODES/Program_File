@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age</title>
+    <style>
+        input {
+            padding: 4px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        span {
+            font-size: 28px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .Main {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            padding: 8px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+        <div class="DOB">
+            <span>Date Of Birth </span>
+            <input type="date" id="DOB">
+        </div>
+        <br>
+        <button onclick="date()">Calculate</button>
+        <div class="detail">
+            <h1> Year <span id="Total_Year"></span>. <span id="Total_Month"></span> Month </h1>
+        </div>
+    </div>
+</body>
+<script>
+    function date() {
+        var Dob = document.getElementById('DOB').value;
+            const dob = new Date(Dob);
+            const Tdate = new Date();
+            document.getElementById('Total_Year').innerHTML = Tdate.getFullYear() - dob.getFullYear();
+            document.getElementById('Total_Month').innerHTML = 12-dob.getMonth();
+    }
+</script>
+</html>

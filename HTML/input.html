@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Henil</title>
+</head>
+<style>
+    body {
+        background: rgb(56, 52, 52);
+    }
+    .login{
+        background-color: black;
+       
+        width: 700px;
+        color: gold;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        border-radius: 33px;
+    }
+    
+.HC{
+    border-radius: 50px;
+    height: 50px;
+    font-size: 21px;
+    background: rgb(56, 12, 1);
+    position:relative;
+    cursor : pointer;
+    width: 200px;
+    color: antiquewhite;
+    border: 2px dotted rgb(199, 212, 10);
+    box-shadow:0 0 30px 0 rgb(170, 233, 23);
+}
+.HC:active{
+    transform: translateY(10px);
+    background: red;
+    color: azure;
+    }
+    h1{
+        margin: 25px;
+        padding: 35px;
+        font-size: 50px;
+        color: rgb(10, 197, 10);
+    }
+    line{
+        font-size: 35px;
+        padding: 8px;
+        margin: 10px;
+        border: 2px solid red;
+    }
+    input {
+        color: aliceblue;
+        background: rgb(92, 74, 74);
+        padding: 15px;
+        transition: .3s;
+        border-radius: 5px;
+        outline: none;
+        font-size: 30px;
+        margin: 15px;
+    }
+    input:hover{
+        background-color: rgb(117, 30, 30);
+    }
+    input[type=button]{
+        background: linear-gradient(225deg,rgb(73, 92, 5),rgb(43, 253, 218),rgb(199, 32, 115));
+        border-radius: 20px;
+        width: 50%;
+        color: rgb(128, 6, 6);
+        border: 5px solid;
+        border-color: rgb(243, 93, 24);
+        margin-top: 30px;
+        box-shadow: 0 0 15px 0 white;
+        cursor: pointer;
+    }
+</style>
+<body>
+<a href="https://henilcode.wordpress.com/">
+<button class="HC">Henil Code </button></a>
+    <div class="login">
+        <h1> Log in </h1>
+        <line> User: </line><input type="text"><br>
+        <line> Password: </line><input type="password"><br>
+        <input type="button" value="Log in">
+    </div>
+</body>
+</html>

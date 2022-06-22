@@ -1,0 +1,35 @@
+* {
+background: gray;
+}
+
+body {
+font-format: Cooper;
+font-size:20px;
+}
+li{
+color: red;
+}
+
+p{
+color: red;
+background: skyblue;
+}
+
+h1 {
+color: red;
+background: rgb(100,20,55);
+}
+
+.c {
+color: red;
+background: green;
+}
+
+#h {
+color: red;
+background: #ff00f0;
+}
+
+p b {
+color : green;
+}

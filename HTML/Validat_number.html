@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title> Henil </title>
+<script>
+function valid(){
+var num=document.form1.num.value;
+if(isNaN(num)){
+document.getElementById("numlo").innerHTML="Enter numeric number";
+return false;
+}else{
+return true;}
+
+}
+</script>
+</head>
+<body>
+<form name="form1" action="videotag.html" target="_blank" onsubmit="return valid()">
+Number:<input type="text" name="num"><span id="numlo"></span> <br/>
+<input type="submit" value="submit">
+</form>
+</body>
+</html>

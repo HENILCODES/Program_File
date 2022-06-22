@@ -1,0 +1,39 @@
+<html>
+<head>
+<script src="jquery=3.4.1.js"></script>
+<script>
+$(document).ready(function)
+{
+var maxLength=$("#title).attr("maxLength");
+$('#title').keyup(function)
+{
+var textlen=maxLength-$(this).val().length;
+$('#rchars').text(textlen+ ' character(s)remaining');
+});
+var essayLength=$("#content").attr("maxlength");
+$('#content').keyup(function)
+{
+var textlen=essayLength-$(this).val().length;
+$('#erchars').text(textlen+ ' character(s)remaining');
+});
+});
+</script>
+<title>Limit character input in the textarea including count</title>
+<style type="text/css">
+textarea
+{
+display:block;
+margin:lem( );
+}
+</style>
+</head>
+<body>
+<form>
+<label>Provide Essay Title Here ( MAximum 1000 characters)</label>
+<textarea id="content"maxlength="1000" rows ="25" cols="50"></textarea>
+<span id="erchars"></span>
+<br>
+<input type="submit" value="Done">
+</form>
+</body>
+<html>
