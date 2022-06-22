@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Henil</title>
+</head>
+
+<body>
+    <button onclick="start()"> Start </button>
+    <button onclick="stop()"> Stop </button>
+    <button onclick="reset()"> Reset </button>
+    <br>
+    <span id="hr"> 0 </span>
+    <span id="minit"> 0 </span>
+    <span id="Second"> 0</span>
+</body>
+<script>
+    var id = -1;
+    var second = 0;
+    var minutes =0;
+    var hours = 0;
+    function tick() {
+        second++;
+        document.getElementById("Second").innerHTML = second;
+        if (second == 60) {
+            second = -1;
+            minutes +=1;
+            document.getElementById("minit").innerHTML = minutes;
+            if (minutes == 60) {
+                minutes = -1;
+                hours += 1;
+                document.getElementById("hr").innerHTML = hours;
+            }
+        }
+    }
+    function start() {
+        if (id == -1) {
+            id = setInterval(tick, 1000);
+        }
+    }
+    function stop() {
+        if (id != -1) {
+            clearInterval(id);
+            id = -1;
+        }
+    }
+    function reset() {
+        stop();
+        second = -1;
+        tick();
+        document.getElementById("minit").innerHTML = 0;
+        document.getElementById("hr").innerHTML = 0;
+    }
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .bar{
+            background-color: rgb(24, 24, 167);
+            width: 95px;
+            height: 76px;
+            margin: auto;  
+            cursor: pointer;
+        }
+        .bar span{
+            background-color: #ffffff;
+            height: 5px;
+            width: 65px;
+            position: relative;
+            left: 15px;
+            display: block;
+            transition: all 0.3s ease-in-out;
+        }
+        .bar span:nth-child(1){
+            top: 20px;
+        }
+        .bar span:nth-child(2){
+            top: 30px;
+        }
+        .bar span:nth-child(3){
+            top: 40px;
+        }
+        .bar.op span:nth-child(1){
+            transform: rotate(46deg);
+            top: 38px;
+            left: 15px;
+        }
+        .bar.op span:nth-child(2){
+            width: 0;
+            opacity: 0;
+        }
+        .bar.op span:nth-child(3){
+            transform: rotate(-43deg);
+            top: 28px;
+            left: 15px;
+        }
+    </style>
+    <title>Henil</title>
+</head>
+<body>
+    <div class="bar" onclick="menu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+<script>
+    function menu(p) {
+        p.classList.toggle("op");
+    }
+</script>
+</html>

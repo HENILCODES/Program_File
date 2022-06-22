@@ -1,0 +1,18 @@
+#manu{
+    border-radius: 10px;
+    padding: 2px 8px 2px 8px;
+    border: 8px solid #272583;
+    color: #4e1808;
+    font-size: 50px;
+    box-shadow: 0 0 8px 0 black;
+    transition: 0.2s;
+}
+#manu:active{
+    box-shadow: 0 0 15px 0 black;
+    color: red;
+    border: 8px solid rgb(19, 3, 241);
+}
+
+<i class="fa fa-bars" id="manu"></i>
+media="screen and (min-width: 900px)" 
+media="screen and (max-width: 600px)"

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Henil</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="cover">
+        <div class="img">
+            <img src="Henil.ico" alt="">
+        </div>
+        <div class="detail">
+           <h4><button onclick="QUT(-1)"> - </button> <span id="QUT"></span> <span id="killo"></span>  <button onclick="QUT(+1)">+</button></h4>
+            <h3> <span id="amount"> </span> ₨</h3>
+        </div>
+        <button onclick="s()">  dd</button>
+    </div>
+</body>
+<script>
+    var Qut = 1;
+    var wait = "kg";
+    var amo = 2500;
+    var s = amo;
+    $(document).ready(function(){
+        document.getElementById("QUT").innerHTML = Qut;
+        document.getElementById("killo").innerHTML = wait;
+        document.getElementById("amount").innerHTML = amo;
+    })
+    
+    function QUT(add) {
+            Qut= document.getElementById("QUT").innerHTML = Qut+add;
+            wait= document.getElementById("killo").innerHTML = wait;
+            if (Qut == 0) {
+                amo =0;
+                Qut = 0;
+            }else{
+                amo = amo * Qut;
+                amo = document.getElementById("amount").innerHTML = amo;
+            }
+
+            if (add == -1 ) {
+                amo = amo / 2;
+                amo = document.getElementById("amount").innerHTML = amo;
+            }else{
+                amo = s;
+                amo = amo * Qut;
+                amo = document.getElementById("amount").innerHTML = amo;
+            }
+    }
+    function s(){
+        alert(Qut + wait );
+    }
+</script>
+</html>

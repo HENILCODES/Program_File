@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Henil</title>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js"></script>
+</head>
+<style>
+    .s{
+        background-color: red;
+    }
+</style>
+<body>
+    <button onclick="ss()">  OK</button>
+    <div id="dk">
+        <h1>Heloo</h1>
+        <h1>Heloo</h1>
+        <h1>Heloo</h1>
+    </div>
+    <div id="out">
+
+    </div>
+</body>
+<script>
+    function ss(){
+        let di = document.getElementById("dk");
+        di.classList.toggle("s");
+        html2canvas(di).then(
+            function (canvas){
+                document.getElementById('out').appendChild(canvas)
+            })
+    }
+</script>
+</html>
