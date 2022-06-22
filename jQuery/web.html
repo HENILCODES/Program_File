@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <button class="s1s" onclick="HTML(1)"> s1 </button>
+    <button class="s2s" onclick="HTML(2)"> s2 </button>
+    <button class="s3s" onclick="CSS(3)"> s3 </button>
+</body>
+
+</html>
+<script>
+    function HTML(i) {
+        $(document).ready(function () {
+            $('.s' + i+'s').hide();
+        })
+    }
+</script>
+<script>
+    function CSS(j) {
+        $(document).ready(function () {
+            $('.s' + j+'s').hide();
+        })
+    }
+</script>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Henil </title>
+	<script src="jquery-3.6.0.js"></script>
+	</head>
+<body>
+<script>
+$(document).ready(function(){
+	$('.b1').click(function(){
+		$('h1').fadeOut();
+		$('h1').css("background","red");
+	});
+	$('.b').click(function(){
+	var h=1;
+	while(h<=10)
+	{
+		$('h1').html(h);
+		h++;
+	}
+		$('h1').fadeIn();
+		$('h1').css("color","white");
+	});
+});
+</script>
+	<h1> Hello </h1>
+	<h1></h1>
+	<button class="b1"> Out </button>
+	<button class="b"> In </button>
+</body>
+</html>

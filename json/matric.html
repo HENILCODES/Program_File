@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Henil </title>
+</head>
+
+<body>
+    <script>
+        var a,b = new Array();
+        a = [[4, 5, 6],[1, 2, 3],[7, 8, 9]];
+        b = [[2, 2, 2],[2, 2, 2],[2, 2, 2]];
+        document.write("A Matrix <br>");
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                document.write("&nbsp; "+ a[i][j]);
+            }
+            document.write("<br>");
+        }
+        document.write("B Matrix <br>");
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                document.write("&nbsp; " + b[j][i]);
+            }
+            document.write("<br>");
+        }
+        document.write("A + B Matrix <br>");
+        for (var i = 0; i < 3; i++) {
+            for (var j = 0; j < 3; j++) {
+                document.write("&nbsp; " + (a[i][j] + b[j][i]));
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

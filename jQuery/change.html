@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Henil</title>
+		<script src="jquery-3.6.0.js"></script>
+	</head>
+<script>
+$(document).ready(function(){
+	$('select').change(function(){
+		var h = $(this).find(":selected").val();
+		alert("City Selecting is = "+h);
+	});
+});
+</script>
+<body>
+<h1> Choose City </h1>
+<form>
+<select>
+	<option> Select City  </option>
+	<option> Vapi </option>
+	<option> Surat </option>
+	<option> Valsad </option>
+	<option> Baroda </option>
+</select>
+</form>
+</body>
+</html>

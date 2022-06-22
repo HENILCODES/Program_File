@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<Employee>
+	<CEO>
+		<Name> Henil </Name>
+	</CEO>
+	<Department>
+		<HR>
+			<Employee_1>
+				<EID> 1001 </EID>
+				<Ename> nayan </Ename>
+				<email> nayan02@gmail.com</email>
+				<salary> 3500$</salary>
+				<city> Vapi </city>
+			</Employee_1>
+			<Employee_2>
+				<EID> 1002 </EID>
+				<Ename> Raj </Ename>
+				<email> raj52@gmail.com</email>
+				<salary> 3200$</salary>
+				<city> Surat </city>
+			</Employee_2>
+		</HR>
+		<Designer>
+			<Employee_1>
+				<EID> 1010 </EID>
+				<Ename> Dixita </Ename>
+				<email> dixita15@gmail.com</email>
+				<salary> 5000$</salary>
+				<city> Mumbai</city>
+			</Employee_1>
+			<Employee_2>
+				<EID> 1011 </EID>
+				<Ename> Pratiksha </Ename>
+				<email> pratiksha205@gmail.com</email>
+				<salary> 5000$</salary>
+				<city> Pune </city>
+			</Employee_2>
+		</Designer>
+		<Marketing>
+			<Employee_1>
+				<EID> 10 </EID>
+				<Ename> Sivam </Ename>
+				<email> nayan02@gmail.com</email>
+				<salary> 4550$</salary>
+				<city> Londan </city>
+			</Employee_1>
+			<Employee_2>
+				<EID> 11 </EID>
+				<Ename> Sunil </Ename>
+				<email> sunil22@gmail.com</email>
+				<salary> 4000$</salary>
+				<city> Chenai </city>
+			</Employee_2>
+			<Employee_3>
+				<EID> 18 </EID>
+				<Ename> Foza </Ename>
+				<email> fozal22@gmaill22@gmail.com</email>
+				<salary> 4000$</salary>
+				<city> Pune </city>
+			</Employee_3>
+			<Employee_4>
+				<EID> 16 </EID>
+				<Ename> Druti </Ename>
+				<email> drutil2@gmail.com</email>
+				<salary> 4000$</salary>
+				<city> Pune </city>
+			</Employee_4>
+		</Marketing>
+	</Department>
+</Employee>

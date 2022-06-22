@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Executing a Function on Keypress Event in jQuery</title>
+<script src="jquery-3.6.0.js"></script>
+
+<script>
+$(document).ready(function(){
+var i = 1;
+$('input[type="password"]').keypress(function(){
+$("span").text(i += 1);
+$("span").css("color","red");
+});
+});
+</script>
+</head>
+<body>
+Password:<input type="password"> enter maximum 8 letter
+ <br><p> Total letter<button><span>0</span> </button></p>
+</body>
+</html>

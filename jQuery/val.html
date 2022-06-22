@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Henil </title>
+		<script src="jquery-3.6.0.js"></script>
+	</head>
+<script>
+$(document).ready(function(){
+	$('.but').click(function(){
+		var VP = $('#a').val();
+		var MP = $('#b').val();
+		alert("Name is :-"+VP+ "| DoB :-"+MP);
+	});
+});
+</script>
+<body>
+<form>
+	Name: <input type="text" id="a"> <br>
+	DoB : <input type="date" id="b"> <br>
+	<button class="but"> Submite </button>
+</form>
+</body>
+</html>

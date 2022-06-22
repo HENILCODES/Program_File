@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Henil </title>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+        .HP{
+            background-color: rebeccapurple;
+            color: aliceblue;
+            font-size: 50px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #BTN{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="BTN" > Click Me </h1>
+</body>
+<script>
+$(document).ready(function(){
+	$('#BTN').click(function(){
+		$('h1').toggleClass('HP');
+	})
+})
+</script>
+</html>

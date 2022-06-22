@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Hello </title>
+</head>
+
+<body onload="DE()">
+    <h1 id="demo"> Hello </h1>
+</body>
+<script>
+    function DE() {
+        const D = new XMLHttpRequest();
+        D.onload = function () {
+            const Doc = this.responseXML;
+            const D = Doc.getElementsByTagName("Employee");
+            let txt = " ";
+            for (let i = 0; i < D.length; i++) {
+                txt = txt + D[i].childNodes[0].nodeValue + "<br>";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+        D.open("GET","h.xml");
+        D.send();
+    }
+</script>
+
+</html>

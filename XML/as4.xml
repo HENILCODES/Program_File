@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<FOOD_Detail>
+	<Pure_veg>
+		<Chhole_Bhature> 
+			<price> 350 </price>
+			<Quantity> 1 Plat </Quantity>
+		</Chhole_Bhature>
+		<Chinies>
+			<price> 450 </price>
+			<Quantity> 2 Plat </Quantity>
+		</Chinies>
+		<Samosa>
+			<price> 30 </price>
+			<Quantity> 2 Plat </Quantity>
+		</Samosa>
+		<Jalebi>
+			<price> 450 </price>
+			<Quantity> 1 Kg </Quantity>
+		</Jalebi>
+		<Vada_Pav>
+			<price> 50 </price>
+			<Quantity> 1 Plat </Quantity>
+		</Vada_Pav>
+		<Dhokla>
+			<price> 450 </price>
+			<Quantity> 2 Kg </Quantity>
+		</Dhokla>
+	</Pure_veg>
+	<Non_Veg>
+		<Mutton_Korma>
+			<price> 550 </price>
+			<Quantity> 2 Plat </Quantity>
+		</Mutton_Korma>
+		<Fish_Biryani>
+			<price> 850 </price>
+			<Quantity> 1 Plat </Quantity>
+		</Fish_Biryani>
+		<Chicken_shup>
+			<price> 650 </price>
+			<Quantity> 1 Cup </Quantity>
+		</Chicken_shup>
+		<Chicken_Tikka>
+			<price> 350 </price>
+			<Quantity> 1 Plat </Quantity>
+		</Chicken_Tikka>
+	</Non_Veg>
+</FOOD_Detail>

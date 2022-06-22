@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Henil </title>
+		<script src="jquery-3.6.0.js"></script>
+	</head>
+<script>
+$(document).ready(function(){
+	$('#b').click(function(){
+		$('h1').before('<h4> That is before method </h4>');
+	})
+})
+</script>
+<body>
+	<button id="b">Before method</button><br><br>
+	<h1> Hello Welcome </h1>
+</body>
+</html>

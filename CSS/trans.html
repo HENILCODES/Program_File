@@ -1,0 +1,40 @@
+<style>
+    body{
+        background-color: black;
+    }
+    .ff {
+        width: 100px;
+        height: 100px;
+        border: 22px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 20px 0 rgb(114, 114, 114);
+        filter: blur(22px);
+        animation: ss 3s infinite;
+    }
+    @keyframes ss {
+        0%{
+            width: 100px;
+            height: 100px;
+            transform: translateX(1px);
+        }
+        50%{
+            width: 230px;
+            height: 230px;
+            transform: translateX(200px);
+            opacity: 0.4;
+        }
+        100%{
+            width: 100px;
+            opacity: 0;
+            height: 100px;
+            transform: translateX(1px);
+        }
+    }
+</style>
+
+<body>
+    <center>
+        <div class="ff"></div>
+    </center>
+    <div class="ff"></div>
+</body>

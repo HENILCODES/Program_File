@@ -1,0 +1,26 @@
+.but{list-style-type: none; font-size: 16pt;
+}
+*{ margin: auto; padding-top: 10px; padding-bottom: 10px; width: 400px; background : #D8F1F8; border: 1px soild silver;
+}
+
+input:focus, textarea:focus{ background-color: lightyellow;
+} 
+input submit { font-size: 12pt;
+} 
+*{
+font-size:25px;
+}
+.but{
+background: linear-gradient(to right,black,yellow);
+color: white;
+width:200px;
+}
+.but:active{
+color:red;
+}
+.s{
+color :red;
+font-size:200px;
+}	
+.ff{
+}

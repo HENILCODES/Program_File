@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<Super_store>
+	<Store_Detail>
+		<Store_Name> Maa Ambe store</Store_Name>
+		<Owner> Henil </Owner>
+		<Contact> 6252555569</Contact>
+	</Store_Detail>
+	<Friut_DataBase>
+		<apple>
+			<product_Id> P12A </product_Id>
+			<Product_Price> 335/-</Product_Price>
+			<Net_Weight> 1 Kg</Net_Weight>
+		</apple>
+		<Figs>
+			<product_Id> P13 </product_Id>
+			<Product_Price> 535/-</Product_Price>
+			<Net_Weight> 5 Kg</Net_Weight>
+		</Figs>
+		<Orange>
+			<product_Id> P13B </product_Id>
+			<Product_Price> 535/-</Product_Price>
+			<Net_Weight> 5 Kg</Net_Weight>
+		</Orange>
+		<Bananas>
+			<product_Id> P14A </product_Id>
+			<Product_Price> 235/-</Product_Price>
+			<Net_Weight> 12 Kg</Net_Weight>
+		</Bananas>
+		<Mango>
+			<product_Id> P24A </product_Id>
+			<Product_Price> 735/-</Product_Price>
+			<Net_Weight> 10 Kg</Net_Weight>
+		</Mango>
+	</Friut_DataBase>
+	<Accessories>
+		<Power_Bank>
+			<Product_ID> P33S </Product_ID>
+			<Product_Price> 18000 /-</Product_Price>
+			<Company> MI </Company>
+			<detail> 10 volt per second</detail>
+		</Power_Bank>
+		<Mobile_Phone>
+			<product_Id> P669d </product_Id>
+			<product_Name> Mi 10 pro</product_Name>
+			<company> Mi </company>
+			<Price> 25000</Price>
+		</Mobile_Phone>
+		<Head_Phone>
+			<Product_ID> Pd20 </Product_ID>
+			<Product_nama> boAt Bassheads 900 wireless(Carbon Black)</Product_nama>
+		</Head_Phone>
+		<BOOK>
+			<product_id> P66 </product_id>
+			<Product_price> 6655 /-</Product_price>
+			<product_Name> Learn Programming</product_Name>
+			<Auther> Modibhai</Auther>
+		</BOOK>
+		<Watch>
+			<Product_ID> Pd20 </Product_ID>
+			<Product_Price> 35222 /-</Product_Price>
+			<company> Rolex </company>
+			<Geranty> 1 Year </Geranty>
+		</Watch>
+		<T-shirt>
+			<Product_ID> Pd2 </Product_ID>
+			<Product_price> 800 </Product_price>
+			<Size> XXL </Size>
+		</T-shirt>
+	</Accessories>
+</Super_store>

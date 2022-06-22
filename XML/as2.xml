@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<College>
+	<BCA>
+		<student_1>
+			<Roll_no> 20 </Roll_no>
+			<Name> Henil </Name>
+			<DOB> 15 - Feb - 2003 </DOB>
+			<Contact> 6598238596 </Contact>
+			<city> Vapi </city>
+		</student_1>
+		<student_2>
+			<Roll_no> 12 </Roll_no>
+			<Name> Nayan </Name>
+			<DOB> 04 - Dec - 2002 </DOB>
+			<Contact> 6598748596 </Contact>
+			<city> Gunjan </city>
+		</student_2>
+		<student_3>
+			<Roll_no> 19 </Roll_no>
+			<Name> Raj </Name>
+			<DOB> 5 - Jun - 2003 </DOB>
+			<Contact> 6577777596 </Contact>
+			<city> Surat </city>
+		</student_3>
+		<student_4>
+			<Roll_no> 21 </Roll_no>
+			<Name> Harsh </Name>
+			<DOB> 04 - May - 2002 </DOB>
+			<Contact> 6888748596 </Contact>
+			<city> Gunjan </city>
+		</student_4>
+	</BCA>
+	<BBA>
+		<student_1>
+			<Roll_no> 5 </Roll_no>
+			<Name> Dixita </Name>
+			<DOB> 15 - Feb - 2003 </DOB>
+			<Contact> 6598748596 </Contact>
+			<city> Bhilad </city>
+		</student_1>
+		<student_2>
+			<Roll_no> 21 </Roll_no>
+			<Name> Pratiksha </Name>
+			<DOB> 10 - Feb - 2003 </DOB>
+			<Contact> 6598762296 </Contact>
+			<city> Vapi </city>
+		</student_2>
+		<student_3>
+			<Roll_no> 6 </Roll_no>
+			<Name> Foza </Name>
+			<DOB> 25 - July - 2003 </DOB>
+			<Contact> 6577777596 </Contact>
+			<city> Vapi </city>
+		</student_3>
+		<student_4>
+			<Roll_no> 3 </Roll_no>
+			<Name> Druti </Name>
+			<DOB> 14 - March- 2002 </DOB>
+			<Contact> 688888596 </Contact>
+			<city> Gunjan </city>
+		</student_4>
+	</BBA>
+</College>

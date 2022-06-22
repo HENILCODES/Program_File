@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<Title> Henil </Title>
+		<script src="jquery-3.6.0.js"></script>
+	</head>
+<body>
+<script>
+$(document).ready(function(){
+	$('#b2').click(function(){
+		$('#ans').hide();
+	})
+	$('#b1').click(function(){
+		$('#ans').show();
+		$('#ans').css("background","lightgreen")
+	})
+	$('#ans').hide();
+})
+</script>
+
+<h3> (Q.1) Who Create a jQuery languag ? </h3>
+<ul>
+	<li> John Resing</li>
+	<li> John Desing</li>
+	<li> Aelbert Stone</li>
+	<li> Nayan Gajare</li>
+</ul>
+<button id="b1"> Show Answer </button> 
+<button id="b2"> Hide Answer </button>
+<h4 id="ans"> Answer is : - <b> John Resing </b> </h4>
+</body>
+</html>

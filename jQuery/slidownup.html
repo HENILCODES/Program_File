@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title> Henil </title>
+	<script src="jquery-3.6.0.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+	$('#b2').click(function(){
+		$('img').slideUp("slow");
+	})
+})
+</script>
+<img src="Henil.ico" class="img"><br> 
+<button id="b2"> Slide up </button> 
+</body>
+</html>
+<!doctype html>
+<html>
+<head>
+	<script src="jquery-3.6.0.js"></script>
+	<style>
+		.img{
+			display:none;
+			height:350px;
+			height:200px;
+		}
+	</style>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+	$('#b1').click(function(){
+		$('img').slideDown("slow");
+	});
+	$('#b2').click(function(){
+		$('img').slideUp("slow");
+	})
+})
+</script>
+<img src="Henil.ico" class="img"><br>
+<button id="b1"> Slide down </button> 
+<button id="b2"> Slide up </button> 
+</body>
+</html>

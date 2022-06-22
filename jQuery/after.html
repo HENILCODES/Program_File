@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Henil </title>
+		<script src="jquery-3.6.0.js"></script>
+	</head>
+<script>
+$(document).ready(function(){
+	$('#b').click(function(){
+		$('form').after('Name <input type="text"><br>');
+	})
+})
+</script>
+<body>
+	<h1> Add Your Name </h1>
+	<form>
+	Name: <input type="text"><br>
+	</form><br>
+	<button>Submite</button><br><br>
+	<button id="b">ADD More Name</button>
+</body>
+</html>
+<!-- $(document).ready(function () {
+    var ComputerNumber = Math.floor(Math.random() * 50);
+    var i = 1;
+    document.getElementById("ChecK").addEventListener("click", function () {
+        var UserGase = document.getElementById("NumB").value;
+        document.getElementById("NumB").value = "";
+        if (UserGase != "") {
+            if (i <= 5) {
+                if (UserGase < ComputerNumber) {
+                    var data = document.createElement("div");
+
+                    data.innerHTML = UserGase + "Enter Big Number" + i;
+                    document.getElementById("ans").appendChild(data);
+
+                } else if (UserGase > ComputerNumber) {
+                    var data = document.createElement("div");
+                    data.innerHTML = UserGase + "Enter Smole Number" + i;
+                    document.getElementById("ans").appendChild(data);
+
+                } else {
+                    var data = document.createElement("div");
+                    data.classList.add("win");
+                    data.innerHTML = UserGase + "Number Match to " + ComputerNumber;
+                    document.getElementById("ans").appendChild(data);
+                    i = 5;
+                }
+                if (i == 5) {
+                    alert("end");
+                    document.getElementById("an").innerHTML = ComputerNumber;
+                }
+                i++;
+            }
+        }
+    });
+}); -->
