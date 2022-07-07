@@ -1,16 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <script>
-        var p;
-        function sd(){
-            p = document.getElementById("dd").value;
-            alert("F"+p);
-        }
-    </script>
-</head>
-<body>
-    <button onclick="sd()"> D </button>
-    <input type="number" id="dd">
-</body>
-</html>
+<script src="jquery-3.6.0.js"></script>
+<div id="header-page">
+    <li><a>sssssssssssssssssssss</a></li>
+    <li><a>sssssssssssssssssssss</a></li>
+    <li><a>sssssssssssssssssssss</a></li>
+    <li><a>sssssssssssssssssssss</a></li>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#header-page li a").on("click", function() {
+            $(this).toggleClass("active");
+        });
+    });
+</script>
+
+<style>
+    .active{
+        background-color: red !important;
+    }
+    /* a{
+        background-color: aqua;
+    } */
+</style>
