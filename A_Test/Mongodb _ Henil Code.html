@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://henilcode.rf.gd/Code_Tamplet/MongoDbCommand.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="https://secure.gravatar.com/avatar/19cef1c37b12cb5d47ce71e9894dd14f?s=160&amp;d=identicon&amp;r=g" type="image">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongodb | Henil Code</title>
+    <link href="./Mongodb _ Henil Code_files/bootstrap.css" rel="stylesheet">
+<style>
+    .set-w {
+        min-width: 400px;
+    }
+    .setM-w{
+        min-width: 350px;
+    }
+</style></head>
+
+
+<body>
+    <div class="container">
+        <div class="top text-center">
+            <h1 class="pb-4">Create By <a href="https://henilcodes.github.io/PH/" target="_blank"> Henil Code </a> </h1>
+            <h3>Mongodb Command</h3>
+        </div>
+        <div class="table-responsive-md mt-4">
+            <table class="table table-hover table-striped table-bordered shadow bordere-dark">
+                <thead class="bg-success fs-4 text-white text-center">
+                    <tr><th>#</th>
+                    <th class="setM-w">Command</th>
+                    <th class="setM-w">Syntax</th>
+                    <th class="set-w">Description</th>
+                </tr></thead>
+                                    <tbody><tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 1</td>
+                        <td> show dbs</td>
+                        <td> &gt; show dbs</td>
+                        <td class="text-break">use command list out all database in mongodb serevr</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 2</td>
+                        <td> db</td>
+                        <td> &gt; db</td>
+                        <td class="text-break">use command find currently working database</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 3</td>
+                        <td> dropDatabase()</td>
+                        <td> &gt; db.dropDatabase()</td>
+                        <td class="text-break">that command use drop current working database</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 4</td>
+                        <td> use</td>
+                        <td> &gt; use henilcode</td>
+                        <td class="text-break">that command use create database and also switch existing database</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 5</td>
+                        <td> createCollection( )</td>
+                        <td> &gt; db.createCollection("name",options)</td>
+                        <td class="text-break">In the command, <b>name<b> is name of collection to be created. Options is a document and is used to specify configuration of collection.</b></b></td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 6</td>
+                        <td> show collections</td>
+                        <td> &gt; show collections</td>
+                        <td class="text-break">that command use for display all collections in working database</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 7</td>
+                        <td> drop()</td>
+                        <td> &gt; db.henilcode.drop()</td>
+                        <td class="text-break">use for complete <b>delete</b> collections in working database</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 8</td>
+                        <td> insert</td>
+                        <td> &gt; db.table.insert({Name:"Henil",Age:19})</td>
+                        <td class="text-break">that code in table is collection and use insert method create single document. </td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 9</td>
+                        <td> insertMany( )</td>
+                        <td> &gt; db.table.insertMany([{Name:"Henil",Age:19},{Name:"Nayan",Age:20}])</td>
+                        <td class="text-break">use insertMany method we can create multi document at a time.</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 10</td>
+                        <td> find()</td>
+                        <td> &gt; db.users.find({ field1 : value })</td>
+                        <td class="text-break">Optional Specifies the fields to return in the documents that match the query filter. To return all fields in the matching documents, omit this parameter.</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 11</td>
+                        <td> pretty()</td>
+                        <td> &gt; db.users.find().pretty()</td>
+                        <td class="text-break">pretty method is display the Mongo query results in an easy-to-read attractive format.</td>
+                    </tr>
+                                    <tr class="table-info fs-5 " style="font-weight: 500;">
+                        <td class="text-center"> 12</td>
+                        <td> distinct()</td>
+                        <td> &gt; db.user.distinct("Name")</td>
+                        <td class="text-break">Finds the distinct values for a specified field across a single collection or view and returns the results in an array.</td>
+                    </tr>
+                            </tbody></table>
+        </div>
+        <div class="text-center mt-5">
+            <span class="blockquote-footer"> © 2022 Henil Code </span>
+        </div>
+    </div>
+
+
+</body></html>
