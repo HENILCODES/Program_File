@@ -1,16 +1,11 @@
-#include<stdio.h>
-int main()
-{
-    int  n,i=1,f=1;
-    printf("\n enter number : ");
-    scanf("%d",&n);
+#include <stdio.h>
 
-    while (i<=n)
-    {
-        
-        f=f*i;
-        i++;
-    }   
-        printf("\n fact is %d",f);
-    
+int SumNumber(int x , int y) {
+  return x + y;
+}
+
+int main() {
+  printf("Sum is: %d", SumNumber(10,5));
+
+  return 0;
 }

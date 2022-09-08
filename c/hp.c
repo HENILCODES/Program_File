@@ -1,7 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    char a;
-    printf("\n entere");
-    scanf("%c",&a);
+    int num;
+    printf("Enter Number : ");
+    scanf("%d",&num);
+
+    printf("%d Multiplication Table \n",num);
+
+    for (int i = 1; i <=10 ; i++)
+    {
+        printf("%d  X  %d  =  %d \n",num,i,(num*i));
+    }
+    
 }

@@ -1,12 +1,12 @@
-#include<iostream>
+#include <iostream>
+#include <string>
 using namespace std;
 
-int main()
-{
-    int a,b;
-    cout <<"enter number : ";
-    cin >> a;
-    b=a*a;
-    cout << "Square = " << b;
-    return 0;
+int Sum(int x , int y) {
+  return x+y;
+}
+
+int main() {
+  cout << "Sum is " << Sum(12,5) ;
+  return 0;
 }
