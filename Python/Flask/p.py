@@ -1,11 +1,15 @@
-from flask import Flask , render_template
-app = Flask(__name__)
-@app.route('/')
-def fy():
-    return "<h1> hi</h1>"
+from flask import Flask
+App = Flask(__name__)
 
-@app.route('/<name>/<int:s>')
-def ty(name,s):
-    return render_template('a.html', n = name , ss = s)
-    
-app.run(debug=True)
+@App.route("/")
+def home():
+    return "<h1>That is home</h1>"
+
+@App.route("/Product")
+def Product():
+    return "<h1>That is Product</h1>"
+
+@App.route("/User/<name>")
+def User(name):
+    return "<h1> Welcome back " + name + " ."
+App.run(debug=True)
