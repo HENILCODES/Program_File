@@ -1,13 +1,15 @@
-from flask import Flask
+from ast import Num
+from flask import Flask , render_template
 App = Flask(__name__)
 
 @App.route("/")
 def home():
     return "<h1>That is home</h1>"
 
-@App.route("/Product")
+@App.route("/C")
 def Product():
-    return "<h1>That is Product</h1>"
+    Num = {'php':70,'java':55,'Python':60}
+    return render_template("delimeter.html",n=Num)
 
 @App.route("/User/<name>")
 def User(name):
