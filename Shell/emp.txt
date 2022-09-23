@@ -1,0 +1,8 @@
+Emp_number |Emp_name |Designation 
+ 101       |aman     |vapi
+ 102       |henil    |Surat
+ 103       |ansh     |Valsad
+ 104       |kevin    |vapi
+ 105       |Harsh    |Daman 
+ 106       |Kamal    |Bharush
+ 

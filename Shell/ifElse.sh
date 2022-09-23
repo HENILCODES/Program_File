@@ -1,10 +1,3 @@
-# echo "Unix is operating System."
-# echo "Unix in Create Many user."
-# echo "Unix in Provide Security."
-# echo "Unix is Open Source."
-# echo "Unix is Very Fast."
-
-
 # echo "Enter First Number"
 # read Num1
 # echo "Enter Second Number"
