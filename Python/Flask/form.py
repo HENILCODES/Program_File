@@ -1,10 +1,5 @@
-from crypt import methods
-from urllib import request
-from flask import Flask, render_template
+from flask import *
 App = Flask(__name__)
-@App.route("/")
-def home():
-    return render_template("home.html")
 
 @App.route("/login")
 def login():
@@ -14,6 +9,6 @@ def login():
 def log():
     name = request.form['uname']
     passs = request.form['pass']
-    return name + "D " + passs
+    return name + " | " + passs
 
 App.run(debug=True)
