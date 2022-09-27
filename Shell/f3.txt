@@ -8,12 +8,10 @@ Emp_number |Emp_name | Subject
  107       |Jethalal | unix
  108       |Bhide    | Php
  109       |Sodhi    | English
-Emp_number |Emp_name | Subject 
  101       |aman     | Unix
  102       |henil    | ASP.net
  103       |ansh     | java
  104       |kevin    | Python
  105       |Harsh    | C++
- 
  106       |Kamal    | unix
  
