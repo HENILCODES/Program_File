@@ -1,5 +1,9 @@
-Unix was originally meant to be a convenient platform for programmers developing software to be run on it and on other systems, rather than for non-programmers.
-
+unix was originally meant to be a convenient platform for programmers developing software to be run on it and on other systems, rather than for non-programmers.
 unix in create many user link user1, user2,user3 and etc.
-
 The system grew larger as the operating system started unix sprea unix ding in academic circles, and as users added their own tools to the system and shared them with colleagues unix.
+unix is part of linux.
+unix open source
+unix is free
+it's very fast
+unix is very good
+os
