@@ -4,6 +4,8 @@ App = Flask(__name__)
 
 @App.route("/")
 def home():
+    if not session.get("name"):
+       return redirect("/login");
     return "<h1> Home <a href='/login'> Log in</a> </h1>"
 
 
@@ -19,24 +21,25 @@ def signup():
 
 @App.route("/login/check", methods=['POST', 'GET'])
 def checkLogin():
-    if request.method == 'GET':
-        name = request.args.get['U_name']
-        password = request.args.get['U_password']
-        return "Login via the login Form"
+    # if request.method == 'GET':
+    #     name = request.args.get['U_name']
+    #     password = request.args.get['U_password']
+    #     return "Login via the login Form"
 
     if request.method == 'POST':
         name = request.form['U_name']
         password = request.form['U_password']
+        session['Name'] = name
     return "name {} , password {}".format(name, password)
 
 
 @App.route("/signup/check", methods=['POST', 'GET'])
 def checkSignup():
-    if request.method == 'GET':
-        name = request.args.get['U_name']
-        password = request.args.get['U_password']
-        email = request.args.get['U_email']
-        return "Login via the login Form"
+    # if request.method == 'GET':
+    #     name = request.args.get['U_name']
+    #     password = request.args.get['U_password']
+    #     email = request.args.get['U_email']
+    #     return "Login via the login Form"
 
     if request.method == 'POST':
         name = request.form['U_name']
