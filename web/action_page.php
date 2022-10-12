@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-THIS IS MY FIRST REGISTRATION FORM
+echo "THIS IS MY FIRST REGISTRATION FORM";
 ?>
 </body>
 </html>
