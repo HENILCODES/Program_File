@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="table" border="2" style="text-align: center;" cellpadding="7px">
+        <thead>
+            <th>SPID</th>
+            <th>GENDER</th>
+            <th>STUDENT_NAME</th>
+            <th>ACADEMIC_BATCH</th>
+            <th>SYLLABUS_ACADEMIC_BATCH</th>
+            <th>EXAM_TOTAL</th>
+            <th>RESULT</th>
+            <th>SGPA</th>
+            <th>YGPA</th>
+            <th>CLASS</th>
+        </thead>
+    </table>
+</body>
+
+</html>
+<script>
+    let tabl = document.getElementById("table");
+    fetch("https://henil-code.github.io/test/sem4Result.json")
+        .then(ob => ob.json())
+        .then(k => detail(k))
+
+    function detail(fild) {
+        for (let i = 0; i < fild.length; i++) {
+            console.log(fild[i].SUBJECTS_MARKS.IOT);
+            tabl.innerHTML += "<tr> <td>" + fild[i].SPID + " </td> <td>" + fild[i].GENDER + " </td><td>" + fild[i].STUDENT_NAME + " </td><td>" + fild[i].ACADEMIC_BATCH + " </td><td>" + fild[i].SYLLABUS_ACADEMIC_BATCH + " </td><td>" + fild[i].EXAM_TOTAL + " </td><td>" + fild[i].RESULT + " </td><td>" + fild[i].SGPA + " </td><td>" + fild[i].YGPA + " </td><td>" + fild[i].CLASS + " </td>  </tr>"
+        }
+    }
+
+</script>
