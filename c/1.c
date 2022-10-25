@@ -1,7 +1,6 @@
 /* 1-D ARRE IN multiyply OF TWO ARRY  */
 
 #include<stdio.h>
-#include<conio.h>
 int main()
 {
     int i,a[3],b[3],c[3];
