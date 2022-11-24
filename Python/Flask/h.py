@@ -6,15 +6,14 @@ conn = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
-    database="test"
+    database="temp"
 )
 
 @app.route("/")
 def s():
     cusr = conn.cursor()
-    quer= "INSERT INTO temp(name) VALUES (%s)"
-    a=("Henil")
-    cusr.execute(quer,"a")
+    quer= "INSERT INTO temp (name) VALUES ('sss')"
+    cusr.execute(quer)
     cusr.commit()
     cusr.close()
     return "Hello"

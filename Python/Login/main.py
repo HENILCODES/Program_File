@@ -1,5 +1,5 @@
-from ast import Try
-from multiprocessing.reduction import duplicate
+# Start your mysql server
+
 from flask import *
 from flask_mysqldb import *
 
